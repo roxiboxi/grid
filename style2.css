@@ -1,0 +1,46 @@
+.layoutprovGrid {
+display: grid;
+width: 150vw;
+height: 150vh;
+
+
+grid-template-areas:
+"pi pi pi pi pi "
+"gr gr gr gr as"
+"a1 a1 a1 a1 as"
+"a2 a3 a4 a5 as"
+"fo fo fo fo fo"
+;
+grid-template-columns:1fr 1fr 1fr 1fr 1fr;
+grid-template-rows: repeat(5,1fr);
+grid-gap:1px;
+}
+
+.header {
+    grid-area: pi;
+    background:pink ;
+}
+.nav { 
+grid-area: gr;
+background: green;
+}
+ .article1 { 
+     grid-area: a1;
+     background: burlywood;
+ }
+ .article2 { 
+    grid-area: a2;
+    background:skyblue;
+}.article3 { 
+    grid-area: a3;
+    background:slateblue;
+}.article4 { 
+    grid-area: a4;
+    background: navy;
+}.article5 { 
+    grid-area: a5;
+    background: olive;
+}
+ 
+
+
